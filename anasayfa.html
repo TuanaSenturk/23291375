@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  <!-- Türkçe karakter kullanmama izin verir -->
+    <title>Tuana'nın Mutfagi</title>
+    
+    <style>
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* Arka plan rengi beyaz */
+        }
+
+        .title {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .menu-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .menu-card {
+            width: 45%; /* Kartların genişliği */
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px); /* Hareket ettiriyo kartı */
+        }
+        .header {
+            height: 250px;
+            background-image: url('img/fire.png'); 
+            background-position: center; /*resmi ortalıyor*/
+            display: flex;
+            justify-content: center; /*sağlı sollu yazıyı ortalıyor*/
+            align-items: center;/*üst alt ortalama*/
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .menu-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .menu-card h3 {
+            margin-top: 10px;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .menu-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        /* Kayıt formu stili */
+form {
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button:active {
+    background-color: #004085;
+}
+
+form .back-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form .back-button:hover {
+    background-color: #5a6268;
+}
+
+form .back-button:active {
+    background-color: #4e555b;
+}
+
+  
+    </style>
+</head>
+<body>
+    <!-- Başlık Alanı -->
+    <div class="header">
+        <h1 class="title">TUANA'S KITCHEN</h1>
+        
+    </div>
+    <!-- Breakfast ve Snack Row -->
+    <div class="menu-row">
+        <!-- Breakfast -->
+        <div class="menu-card">
+            <a href="breakfastPage.html">
+                <img src="img/breakfast.png" alt="Breakfast">
+            </a>
+            <h3>BREAKFAST</h3>
+            <p>krep, pişi, mıhlama</p>
+        </div>
+        <!-- Snack -->
+        <div class="menu-card">
+            <a href="snackPage.html">
+                <img src="img/snack.png" alt="Snack">
+            </a>
+            <h3>SNACK</h3>
+            <p>tost, gözleme, sandviç</p>
+        </div>
+    </div>
+
+    <!-- Dinner ve Dessert Row -->
+    <div class="menu-row">
+        <!-- Dinner -->
+        <div class="menu-card">
+            <a href="dinnerPage.html">
+                <img src="img/dinner.png" alt="Dinner">
+            </a>
+            <h3>DINNER</h3>
+            <p>çorba, kuru fasulye, musakka</p>
+        </div>
+        <!-- Dessert -->
+        <div class="menu-card">
+            <a href="desertPage.html">
+                <img src="img/desert.png" alt="Dessert">
+            </a>
+            <h3>DESSERT</h3>
+            <p>kek, baklava, trileçe</p>
+        </div>
+    </div>
+   
+    <form action="kayit.php" method="POST">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" name="username" id="username" required><br><br>
+
+        <label for="email">E-posta:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">Şifre:</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <button type="submit" name="submit">Kayıt Ol</button>
+    </form>
+</body>
+</html>

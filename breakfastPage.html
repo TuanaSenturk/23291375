@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Breakfast Recipes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="arama.css">   
+
+        </style>
+    </head>
+    <body>
+
+        <div class="search-container">
+            <input id="searchInput" class="search-input" type="text" placeholder="ara...">
+        </div>
+        <script>
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase(); /*küçük harf*/
+                if (searchText.includes('krep')) {
+                document.getElementById('krep').scrollIntoView({behavior: 'smooth'});/*aşağı kaydırır smooth=yumuşak animasyonlu*/
+                } else if (searchText.includes('pankek')) {
+                    document.getElementById('pankek').scrollIntoView({behavior: 'smooth'});
+                }else if (searchText.includes('menemen')) {
+                    document.getElementById('menemen').scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        </script>
+        <div class="recipe-container" id="krep">
+            <div class="recipe-title">Krep Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <b>Malzemeler:</b><br> 
+                    2 adet yumurta <br>
+                    2 su bardağından biraz az un <br>
+                    2 su bardağı süt (dilerseniz yarı yarıya süt ve su karışık kullanılabilir) <br>
+                    1 çay kaşığı tuz <br>
+                    pişirmek için tereyağı veya sıvı yağ <br>
+                </div>
+                
+            </div>
+            <div class="steps">
+                <div><b>1.</b>Krep tarifi hazırlamak için un, tuz, süt ve suyu karıştırma kabına alarak hiç topak kalmayana kadar iyice çırpın.</div>
+                <div><b>2.</b>Yumurtaları ekleyin biraz daha çırpın. Kek hamurundan daha akıcı bir kıvamda hamur edin.</div>
+                <div><b>3.</b>Teflon tavaya 1 çay kaşığı kadar tereyağı veya sıvı yağ koyup fırça ile yayın.</div>
+                <div><b>4.</b>Kızgın tavaya 1 kepçe krep hamuru dökün, sağa sola eğerek yayın.</div>
+                <div><b>5.</b>Her iki tarafını çevirerek hafif kızarana kadar orta ateşte pişirin. Tüm harcınız bitene kadar bu işleme devam edin. Krep tarifimiz hazır, afiyet olsun.</div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_xtyBRazTSw?si=twkDF0OE9FyHoQDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe-container" id="pankek">
+            <div class="recipe-title">Pankek Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <b>Malzemeler:</b><br>
+                    2 adet yumurta <br>
+                    2 yemek kaşığı şeker <br>
+                    1 su bardağı süt <br>
+                    1,5 su bardağı un <br>
+                    1 paket kabartma tozu <br>
+                    1 paket vanilya <br>
+                </div>
+                
+                <div class="steps">
+                    <div><b>1.</b>Pankek yapmak için öncelikle yumurtalar ve şekeri uygun bir karıştırma kabına alarak iyice çırpalım.</div>
+                    <div><b>2.</b>Süt, un, kabartma tozu, vanilya ilave çırpma teli ile çırpalım. Siz dilerseniz mikser ile de çırpabilirsiniz. Kek kıvamından biraz daha koyu olacak şekilde hamur hazırlayalım.</div>
+                    <div><b>3.</b>Teflon ya da yapışmaz bir tavaya az sıvı yağı dökelim, fırça yardımı ile her tarafına dağıtalım. Sıvı yağı az kullanmak pankek yapmanın püf noktalarındandır. Dilerseniz peçete ile de tavaya dağıtabilirsiniz.</div>
+                    <div><b>4.</b>1 büyük kaşık hamur dökülerek hamurun kendi kendine yayılmasını bekleyelim.</div>
+                    <div><b>5.</b>Üzeri göz göz olmaya başlayan pankeklerimizi spatula yardımı ile ters çevirelim. Diğer taraflarını da pişirelim</div>
+                    <div><b>6.</b>Her iki tarafı da pişen pankeklerimizi servis tabağına alalım.</div>
+                    <div><b>7.</b>Üzerine  pudra şekeri serpilerek zevkinize göre muz, kivi, çilek, çikolata, bal, sürülebilir çikolata, reçel ile servis edebilirsiniz.</div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O2xWJcobcSY?si=ZX7vHe0lutEk870h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>    
+            </div>
+        </div>
+        <div class="recipe-container" id="menemen">
+            <div class="recipe-title">Menemen Tarifi</div>
+            <div class="ingredients">
+                <div class=" yuvarla-bir">
+                    <b>Malzemeler:</b><br>
+                    2 yemek kaşığı sıvı yağ <br>
+                    3 adet yeşil biber (Sap ve çekirdekleri temizledikten sonra, ince doğranmış) <br>
+                    3 orta boy domates <br>
+                    1/2 (yarım) çay kaşığı tuz <br>
+                    3 adet yumurta <br>
+                </div>
+                
+                <div class="steps">
+                    <div><b>1.</b>Sıvı yağı ve biberleri tavaya alarak biberlerin rengi dönünceye kadar kavurun.</div>
+                    <div><b>2.</b>Üzerine kabukları soyulup küçük küçük doğranmış domatesleri ilave edin.</div>
+                    <div><b>3.</b>Kısık ocakta tavanın kapağını kapatarak domateslerin iyice pişmesini bekleyin.</div>
+                    <div><b>4.</b>Domatesler çok suyu değil, tavaya yapışıyorsa birazcık kaynar su ekleyebilirsiniz. Genellikle de bu duruma gerek kalmayacaktır.</div>
+                    <div><b>5.</b>Fotoğraftaki gibi domatesler piştikten sonra yumurtaları kırabilirsiniz. Yumurtaları ister ayrı bir kapta çırpıp ekleyin isterseniz de benim gibi tavaya kırıp tavada karıştırabilirsiniz.</div>
+                    <div><b>6.</b>Üzerine tuz ve dilediğiniz baharatları ekleyerek yumurtalar pişene kadar bekleyin.</div>
+                    <div><b>7.</b>Kaşar peyniri eklemek istiyorsanız bu aşamada peynirleri de ilave edebilirsiniz. Menemeni sıcak olarak servis yapın.</div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GaduRIkOYzA?si=wy5iEAnI8cxrPqlJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+            
+       
+    </body>
+
+</html>

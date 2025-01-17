@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Snack Recipes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="arama.css">       
+    </head>
+    <body>
+        <div class="search-container">
+            <input id="searchInput" class="search-input" type="text" placeholder="ara...">
+        </div>
+        <script>
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase(); /*küçük harf*/
+                if (searchText.includes('gözleme')) {
+                document.getElementById('gözleme').scrollIntoView({behavior: 'smooth'});/*aşağı kaydırır smooth=yumuşak animasyonlu*/
+                } else if (searchText.includes('tost')) {
+                    document.getElementById('tost').scrollIntoView({behavior: 'smooth'});
+                }else if (searchText.includes('sosisli')) {
+                    document.getElementById('sosisli').scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        </script>
+       
+        <div class="recipe-container" id="tost">
+            <div class="recipe-title">Tost Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    6-7 adet sosis <br>
+                    Sucuk <br>
+                    Kaşar peyniri <br>
+                    3 dilim ayvalık tost ekmeği <br>
+                    Salatalık turşusu <br>
+                    Ketçap <br>
+                    Mayonez <br>
+                </div>
+                
+                
+            </div>
+
+            <div class="steps">
+                <div><b>1.</b> Sosis ve sucuk jülyen şeklinde doğranır.</div>
+                <div><b>2.</b> Tavada sotelenir.</div>
+                <div><b>3.</b> Ayvalık tost ekmeği ikiye kesilir bir parçasına ketçap bir parçasına mayonez sürülür.</div>
+                <div><b>4.</b> İlk olarak turşu koyulur üzerine sırasıyla sucuk, kaşar ve sosis eklenir ve kapatılır.</div>
+                <div><b>5.</b> Tost makinasına alınır biraz kızarınca tereyağ sürülür.</div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NGoRt-R7lEg?si=2JPVk4wuo61ZWH2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        
+        <div class="recipe-container" id="gözleme">
+            <div class="recipe-title">Gözleme Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    2 adet yufka <br>
+                    Yarım kase beyaz peynir <br>
+                    Yarım kase kaşar peyniri rendesi <br>
+                    1 Tutam maydanoz <br>
+                </div>
+                 
+            </div>
+                <div class="steps">
+                    <div><b>1.</b>Maydanozu ince kesin, peynirlere ekleyerek güzelce karıştırın.</div>
+                    <div><b>2.</b>Yufkayı düz bir zemine sererek pizza dilimi şeklinde 4’e bölün.</div>
+                    <div><b>3.</b>1 yufka parçasını serin,  tam ortasına gelecek şekilde iç harçtan koyun, kenarlarını gözleme kare olacak şekilde kapatın.</div>
+                    <div><b>4.</b>En alt kat ince olmasın isterseniz bir kenarı alta doğru kapatabilirsiniz.</div>
+                    <div><b>5.</b>Tüm yufkaları aynı şekilde sarın.</div>
+                    <div><b>6.</b>Tavaya sıvı yağ koyarak gözlemeleri önlü arkalı kızartın. Afiyet olsun.</div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ruw2p2uQJ1U?si=Hw9kp3DLlAV_lq-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        <div class="recipe-container" id="sosisli">
+            <div class="recipe-title">Sosisli Tarifi</div>
+            <div class="ingredients">
+                    <div class="yuvarla-bir">
+                        1 yemek kaşığı salça
+                        Sıvıyağ <br>
+                        2 su bardağı su <br>
+                        Karabiber, tuz, pulbiber <br>
+                        6 adet sosis (siz kaç adet yapacaksanız o kadar koyabilirsiniz) <br>
+                        Marul <br>
+                        Domates <br>
+                        Turşu <br>
+                        Patates kızartması <br>
+                        Ketçap <br>
+                        Mayonez <br>
+                        Hardal <br>
+                    </div>
+                    
+                    <div class="steps">
+                        <div><b>1.</b>Tenceremize sıvıyağını ve salçayı ekleyip salçanın kokusu çıkana kadar kavuralım.</div>
+                        <div><b>2.</b>Suyu ve baharatları ekleyip sosun kaynamasını bekleyelim.</div>
+                        <div><b>3.</b>Bu arada uzun sosislerin üzerine çizikler atalım.</div>
+                        <div><b>4.</b>Kaynayan sosun içine sosisleri atıp kaynatmaya devam edelim.</div>
+                        <div><b>5.</b>15 dk sosisleri kaynatarak pişirelim, arada çevirmeyi unutmayalım.</div>
+                        <div><b>6.</b>Sosisler şiştiğinde pişmiş hazır demektir.</div>
+                        <div><b>7.</b>İçine koyacağımız malzemeleri hazırlayalım.</div>
+                        <div><b>8.</b>Ekmeğimizi ortadan ikiye keselim ekmeğin arasına 2 yemek kaşığı kadar sostan dökelim, sosisi koyalım , marul, domates, turşu ve patates kızartmasını koyalım.</div>
+                        <div><b>9.</b>Ketçap ve mayonezle servis edelim.</div>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lCmxmQ-JgOc?si=7efn5957W9Mh1NlD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        
+    </body>
+
+</html>
+

@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dinner Recipes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="arama.css">   
+    </head>
+    <body>
+
+        <div class="search-container">
+            <input id="searchInput" class="search-input" type="text" placeholder="ara...">
+        </div>
+        <script>
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase(); /*küçük harf*/
+                if (searchText.includes('baklava')) {
+                document.getElementById('baklava').scrollIntoView({behavior: 'smooth'});/*aşağı kaydırır smooth=yumuşak animasyonlu*/
+                } else if (searchText.includes('revani')) {
+                    document.getElementById('revani').scrollIntoView({behavior: 'smooth'});
+                }else if (searchText.includes('kurabiye')) {
+                    document.getElementById('kurabiye').scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        </script>
+        <div class="recipe-container">
+            <div class="recipe-title">Baklava Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    3 adet yumurta <br>
+                    1 su bardağı süt (200 ml) <br>
+                    1 su bardağı sıvı yağ (200 ml) <br>
+                    1 paket kabartma tozu <br>
+                    1 yemek kaşığı sirke <br>
+                    Yarım çay kaşığı tuz <br>
+                    5,5 su bardağı un <br>
+                    4 su bardağı toz şeker <br>
+                    5 su bardağı su (1 litre) <br>
+                    Birkaç damla limon suyu <br>
+                    Mısır nişastası <br>
+                    Kırılmış ceviz ya da fındık <br>
+                    300 g tereyağı ya da margarin <br>
+                </div>
+                
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> Kolay ev baklavasının şerbeti için tencereye şeker ve suyu alarak karıştıralım. Kaynamaya bırakalım.</div>
+                <div><strong>2.</strong> 15 dakika kadar kaynadıktan sonra içerisine limon suyu ekleyelim ve 1-2 dakika daha kaynatıp ocaktan alalım.</div>
+                <div><strong>3.</strong> Hamurunu hazırlamak için öncelikle yumurtayı, sütü, sıvı yağı, sirkeyi, kabartma tozunu ve tuzu yoğurma kabına boşaltın ve yavaş yavaş un ekleyerek ortalama yumuşaklıkta bir hamur elde edinceye kadar yoğuralım.</div>
+                <div><strong>4.</strong> Hazırladığımız hamuru un serptiğimiz tezgahta toparlayalım ve 30 eşit parçaya bölelim.</div>
+                <div><strong>5.</strong> Bu parçaları beze haline getirelim.</div>
+                <div><strong>6.</strong> Ardından bezelerimizi unlayarak, tek tek tabak büyüklüğünde açalım.</div>
+                <div><strong>7.</strong> Açtığımız hamurların aralarına nişasta serpip 10’ar 10’ar üst üste koyun.</div>
+                <div><strong>8.</strong> 10’arlı olarak grupladığımız bu üç parçadan her birini merdane yardımı ile tepsi büyüklüğüne getirelim.</div>
+                <div><strong>9.</strong> Merdane ile açtığınız hamurların aralarına ceviz ya da fındık serperek üst üste yerleştirelim.</div>
+                <div><strong>10.</strong> Baklavamızı dilediğiniz şekilde keselim ve üzerine her yerine eşit şekilde gelmesine dikkat ederek eritilmiş yağın yarısını dökün.</div>
+                <div><strong>11.</strong> Hazırladığımız baklavamızı önceden ısıtılmış 160°C fırına sürelim ve 30 dakika pişmeye bırakalım.</div>
+                <div><strong>12.</strong> Hafif rengi değiştiğinde fırından alarak kalan yağı gezdirelim ve tekrar fırına sürerek altı üstü kızarana kadar 30 dakika daha pişirelim.</div>
+                <div><strong>13.</strong> Fırından alalım ve soğuk şerbeti üzerine gezdirerek 2 saat kadar dinlenmeye bırakalım.</div>
+                <div><strong>14.</strong> Şerbetini güzelce çeken baklavamız servise hazır. Afiyet olsun!</div>
+            </div>
+
+            
+            <iframe src="https://www.youtube.com/embed/Ehf8igYTJVk?si=tcJyl00Q-nizw0ES" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-title" id="kurabiye">Kurabiye Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    2 adet yumurta sarısı<br>
+                    150 gr tereyağı veya margarin<br>
+                    1 çay bardağı pudra şekeri<br>
+                    1 yemek kaşığı su <br>
+                    Yarım paket vanilya <br>
+                    Yarım paket kabartma tozu<br>
+                    1 çay kaşığı tarçın<br>
+                    1 su bardağı çekilmiş ceviz<br>
+                    Yarım su bardağı damla çikolata<br>
+                    2,5 su bardağı un<br>
+                </div>
+                
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> Starbucks kurabiye hamuru için oda sıcaklığındaki tereyağı, yumurta sarısı ve pudra şekerini bir karıştırma kabına alalım.</div>
+                <div><strong>2.</strong> Mikserle tüm malzemeyi iyice karışıncaya kadar çırpalım.</div>
+                <div><strong>3.</strong> Ardından vanilya, kabartma tozu, tarçın, su ve unu yavaş yavaş ekleyerek ele yapışmayacak bir kıvama gelinceye kadar hamuru yoğuralım.</div>
+                <div><strong>4.</strong> Son olarak hamurun içerisine çekilmiş ceviz ve damla çikolatasını ilave edelim. Hamuru hızlıca tekrardan yoğuralım. Damla çikolataların erimemesi için bu aşamada hızlı olmanızı tavsiye ederim.</div>
+                <div><strong>5.</strong> Hamurdan irice parçalar koparalım. Elimizle yuvarladıktan sonra avucumuzun içi ile bastırarak şekil verelim.</div>
+                <div><strong>6.</strong> Hazırladığımız kurabiyeleri pişirme kağıdı serdiğimiz fırın tepsisine aralıklı olarak yerleştirelim.</div>
+                <div><strong>7.</strong> Kurabiyelerimizi önceden ısıttığımız 180 °C fırında yaklaşık 20 dakika boyunca pişmeye bırakalım.</div>
+                <div><strong>8.</strong> Sürenin sonunda pişen kurabiyelerimizi fırından alalım ve oda sıcaklığına gelinceye kadar bekletelim. Ardından servis edelim. Afiyet olsun!</div>
+            </div>
+
+            <!-- Video Embed -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nq6B26lwW54?si=CO_ad0G6gqJxX8a-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-title" id="revani">Revani Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    3 yumurta <br>
+                    1 su bardağı şeker <br>
+                    1 su bardağı yoğurt <br>
+                    1 su bardağı irmik <br>
+                    1 su bardağı un <br>
+                    1 paket vanilya <br>
+                    1 paket kabartma tozu <br>
+                    1 çay bardağı sıvı yağ <br>
+                </div>
+                <div class="yuvarla-bir">
+                    <strong>Şerbet:</strong><br>
+                    3 su bardağı su <br>
+                    3 su bardağı seker <br>
+                    Yarım limon suyu <br>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> İlk olarak şerbet hazırlanır. Şerbet için tencereye şeker ve su alınarak kaynatılır. Kaynadıktan sonra yarım limon suyu eklenip 1-2 dakika daha kaynatılıp altı kapatılır.</div>
+                <div><strong>2.</strong> Kek için, yumurta ve şeker çırpma kabına alınarak iyice çırpılır.</div>
+                <div><strong>3.</strong> Ardından sıvı yağ, yoğurt ve irmik eklenip çırpılır.</div>
+                <div><strong>4.</strong> Son olarak un, kabartma tozu ve vanilya da eklenerek iyice çırpılır.</div>
+                <div><strong>5.</strong> Yağlamış olduğumuz fırın kabına kek hamuru dökülür.</div>
+                <div><strong>6.</strong> 170 derece fırında üstü kızarana dek yaklaşık 30 dakika pişirilir</div>
+                <div><strong>7.</strong> İlk sıcaklığı çıkan kek dilimlere kesilir ve sıcak kekin üstüne soğumuş şerbet dökülür.</div>
+                <div><strong>8.</strong> 1-2 saat dinlendirdikten sonra üzeri isteğe göre krem şanti, hindistan cevizi yada fıstık vb. ile süslenerek servis edilir. Afiyet olsun.</div>
+            </div>
+
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eDhA11Gf1gc?si=yz8Zfpi6l78XMKAF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </body>
+</html>

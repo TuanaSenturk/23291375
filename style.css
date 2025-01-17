@@ -1,0 +1,71 @@
+
+
+    body {
+        font-family: 'Arial';
+        background-color: #fafafa;
+        color: #333;
+    }
+
+    
+    .recipe-container {
+        width: 85%;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .recipe-title {
+        color: #E94F37;
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Malzemeler */
+    .ingredients {
+        display: flex; /*esnek bir şekilde yerleştirir*/
+        flex-wrap: wrap; /*satıra sığmayınca alt satıra geçer*/
+        justify-content: space-between; /*ögeler arasındaki boşluğu eşit şekilde ayarlar*/
+        margin-bottom: 30px;
+    }
+
+    .ingredients .yuvarla-bir {
+        flex: 1; /*öge diğer ögelere göre esneyecek*/ /*esneklik oranı*/
+        border-radius: 15px;
+        border: 3px solid #0287D0;
+        padding: 20px;
+        background-color: #f0f8ff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+    }
+
+    
+
+    /* Tarif Adımları */
+    .steps {
+        margin-top: 30px;
+    }
+
+    .steps div {
+        background-color: #fafafa;
+        border-left: 5px solid #E94F37;
+        padding: 10px 20px;
+        margin-bottom: 12px;
+        font-size: 1.1em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);    
+    }
+
+    .steps b {
+        color: #E94F37;
+    }
+
+    /* Iframe video için stil */
+    iframe {
+        width: 100%;
+        height: 20%;
+    }
+
+
+

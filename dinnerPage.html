@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dinner Recipes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="arama.css">   
+    </head>
+    <body>
+
+        <div class="search-container">
+            <input id="searchInput" class="search-input" type="text" placeholder="ara...">
+        </div>
+        <script>
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase(); /*küçük harf*/
+                if (searchText.includes('iskender')) {
+                document.getElementById('iskender').scrollIntoView({behavior: 'smooth'});/*aşağı kaydırır smooth=yumuşak animasyonlu*/
+                } else if (searchText.includes('pizza')) {
+                    document.getElementById('pizza').scrollIntoView({behavior: 'smooth'});
+                }else if (searchText.includes('lazanya')) {
+                    document.getElementById('lazanya').scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        </script>
+        <div class="recipe-container">
+            <div class="recipe-title" id="iskender">İskender Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    Yarım kilo ince çekilmiş dana kıyma <br>
+                    1 adet orta boy soğan <br>
+                    2 yemek kaşığı yoğurt <br>
+                    1 silme tatlı kaşığı tuz <br>
+                    Kırmızı toz biber, karabiber, kimyon <br>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> Soğanı temizleyip rondoda çok ince olacak şekilde çekelim.</div>
+                <div><strong>2.</strong> Üzerine kıyma, yoğurt, baharat ve tuzu ekleyip rondoda çekmeye devam edelim. Yaklaşık 5 dk. Boyunca rondodan çekelim.</div>
+                <div><strong>3.</strong> Streç film üzerine alıp silindir şeklinde rulo yapıp güzelce saralım. Derin dondurucuda 1 gece donduralım.</div>
+                <div><strong>4.</strong> Ertesi gün dondurucudan çıkarıp yarım saat kadar kesilecek kıvama gelene kadar bekletelim.</div>
+                <div><strong>5.</strong> Hala donuk olan dönerimizi ince ince dilimleyelim.</div>
+                <div><strong>6.</strong> Hafif yağladığımız kızgın tavaya direk atıp arkalı önlü kızartalım.</div>
+            </div>
+           
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KIWEWpFv6ek?si=4x04zPuhzDLf2fiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-container" id="pizza">
+            <div class="recipe-title">Pizza Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    5 su bardağı un<br>
+                    1 paket instant maya (ya da yarım paket yaş maya)<br>
+                    1 yemek kaşığı toz şeker<br>
+                    Yarım yemek kaşığı tuz<br>
+                    4 yemek kaşığı zeytinyağ<br>
+                    2 su bardağı ılık su <br>
+                </div>  
+                <div class="yuvarla-bir">
+                    <strong>Sos:</strong><br>
+                    2 su bardağı domates sosu <br>
+                    2 yemek kaşığı zeytinyağı <br>
+                    1 çay kaşığı kuru fesleğen <br>
+                    1 çay kaşığı kekik <br>
+                </div>  
+                <div class="yuvarla-bir">
+                    <strong>Üzeri İçin:</strong><br>
+                    Mozzarella peyniri <br>
+                    Kaşar peyniri <br>
+                    Sucuk <br>
+                    Sosis <br>
+                    Mantar <br>
+                    Mısır <br>
+                </div>  
+
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> Unu yoğurma kabına alalım ve ortasını havuz şeklinde açalım.</div>
+                <div><strong>2.</strong> Unun ortasına instant maya, şeker, tuz, zeytinyağı ve ılık suyu yavaş yavaş ilave ederek hamurumuzu yoğurmaya başlayalım. İnstant maya yerine yarım paket yaş mayada kullanabilirsiniz.</div>
+                <div><strong>3.</strong> Yumuşak kıvamlı ele yapışmayan bir hamur elde edelim.</div>
+                <div><strong>4.</strong> Toparlanan hamurumuzun üzerini streç film örterek yaklaşık 30 dk kadar mayalanmaya bırakalım.</div>
+                <div><strong>5.</strong> Mayalanan hamurun üzerini açalım ve un serptiğimiz tezgaha hamuru alalım.</div>
+                <div><strong>6.</strong> Elimizle yine toparlayıp havasını aldıktan sonra 2 eşit parçaya bölelim. Eğer ince hamurlu pizza hazırlamak istiyorsanız aynı hamuru 3 parçaya da bölebilirsiniz.</div>
+                <div><strong>7.</strong> Kestiğimiz parçayı beze haline getirerek un serptiğimiz tezgahta merdane yardımıyla açalım. Hafifçe un serperek merdaneye yapışmamasını sağlayabilirsiniz.</div>
+                <div><strong>8.</strong> Açtığımız hamuru pizza tepsisine almadan önce boyutu uygun mu diye kontrol edelim.</div>
+                <div><strong>9.</strong> Açtığımız hamuru unladığımız pizza tepsisine alalım ve elimizle etrafını düzeltelim.</div>
+                <div><strong>10.</strong> Dilerseniz normal fırın tepsisine pişirme kağıdı sererek veya altına mısır unu serperek de hazırlayabilirsiniz..</div>
+                <div><strong>11.</strong> Mayalanan hamurun üzerini açalım ve un serptiğimiz tezgaha hamuru alalım.</div>
+                <div><strong>12.</strong> Bir çatal yardımıyla hamurumuzun tüm yüzeyine delikler açalım böylelikle hamur pişerken kabarmayacaktır.</div>
+                <div><strong>13.</strong> Pizza tepsisini önceden ısıttığımız 200° fırına sürerek hamurumuzu 10 dk pişirelim.</div>
+                <div><strong>14..</strong> Peynirleri güzel bir şekilde eriyen sucukları sosisleri gayet nefis bir şekilde pişen pizzamız servise hazır. Afiyet olsun :)</div>
+            </div>
+
+           
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TdTq7eg1ITI?si=c7JB1Uf3KjqJtZOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="recipe-container" id="lazanya">
+            <div class="recipe-title">Lazanya Tarifi</div>
+            <div class="ingredients">
+                <div class="yuvarla-bir">
+                    <strong>Malzemeler:</strong><br>
+                    400 gr kıyma<br>
+                    3 yemek kaşığı sıvı yağ <br>
+                    2 adet kuru soğan<br>
+                    2 adet domates <br>
+                    2 yemek kaşığı domates salçası <br>
+                    2 diş sarımsak <br>
+                    1 tatlı kaşığı tuz <br>
+                    1,5 su bardağı sıcak su (300 ml)
+                </div>
+                <div class="yuvarla-bir">
+                    <strong>Beşamel Sos İçin:</strong><br>
+                    2 yemek kaşığı tereyağı<br>
+                    3 su bardağı süt (600 ml) <br>
+                    Yarım su bardağı un<br>
+                    1 çay kaşığı tuz<br>
+                    Yarım çay kaşığı karabiber<br>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div><strong>1.</strong> İç harcı için geniş bir tavaya sıvı yağı alalım. Küçük küçük doğradığımız soğanları ilave edelim, biraz kavurduktan sonra üzerine kıymayı ilave ederek kavurmaya devam edelim.</div>
+                <div><strong>2.</strong> Kıymalar yeterince kavrulunca doğradığımız sarımsakları ve kabuğunu soyup doğradığımız domatesleri de ilave edelim ve orta ateşte 5 dakika kadar daha soteleyelim.</div>
+                <div><strong>3.</strong> Üzerine salçayı ve tuzu ekleyerek kavuralım.</div>
+                <div><strong>4.</strong> Ardından suyunu ekleyelim ve iç harcımız suyunu çekene kadar kısık ateşte pişmeye bırakalım.</div>
+                <div><strong>5.</strong> Beşamel sosu için tereyağı ve unu küçük bir tencereye alalım ve orta ateşte kavurun.</div>
+                <div><strong>6.</strong> Üzerine sütü azar azar ekleyelim ve topaklanmaması için sürekli çırparak karıştıralım.</div>
+                <div><strong>7.</strong> Kaynamaya başlayınca tuz ve karabiberi ekleyelim. Muhallebi kıvamına gelince ocaktan alalım.</div>
+                <div><strong>8.</strong> Kıymalı sos ve beşamel sos hazırlandıktan sonra ısıya dayanıklı bir fırın kabına önce biraz iç harçtan yayalım.</div>
+                <div><strong>9.</strong> Üzerine çok az beşamel sostan gezdirdikten sonra lazanyaları dizelim.</div>
+                <div><strong>10.</strong> Lazanyaların üzerine biraz kıymalı iç harç ve ardından beşamel sos dökerek güzelce yayalım.</div>
+                <div><strong>11.</strong> Üzerine tekrar lazanya yapraklarından yerleştirelim ve tekrar iç hraç ve beşamel sostan gezdirelim. Bu işlemi malzemeleriniz bitene kadar devam ettirelim.</div>
+                <div><strong>12.</strong> En üstteki lazanyalara tekrar iç harç ve beşamel sos dökelim ve kaşar peyniri rendesi serpelim.</div>
+                <div><strong>13.</strong> Lazanyalarımızı önceden ısıtılmış 190 derece fırında yaklaşık 20-25 dakika pişirelim</div>
+                <div><strong>14.</strong> Üzeri tamamen kızarınca fırından alalım ve 15 dakika kadar dinlendirelim.</div>
+                <div><strong>15.</strong> Ardından lazanyamızı dilimleyerek servis edelim. Afiyet olsun.</div>
+            </div>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QBEdqnjRiqA?si=4SaBjWU0YeV0sUAm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        </div>
+        </body>
+</html>
